@@ -16,11 +16,11 @@ def rotate_2d_matrix(matrix):
             x = (n - 1 - j)
             # current number
             tmp = matrix[i][j]
-            # change top for left
+            # change top for a left
             matrix[i][j] = matrix[x][i]
             # change left for bottom
             matrix[x][i] = matrix[y][x]
-            # change bottom for right
+            # change bottom for a right
             matrix[y][x] = matrix[j][y]
             # change right for top
             matrix[j][y] = tmp
